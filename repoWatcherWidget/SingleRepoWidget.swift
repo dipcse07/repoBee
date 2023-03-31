@@ -26,17 +26,19 @@ struct SingleReopProvider: TimelineProvider {
                 var repo = try await NetworkManager.shared.getRepo(atUrl: repoToShow)
                 let avatarImageData = await NetworkManager.shared.downloadImageData(from: repo.owner.avatarUrl)
                 repo.avatarData = avatarImageData ?? Data()
-                
-                let contributors = try await NetworkManager.shared.getContributors(atUrl: repoToShow + "/contributors")
-                
-                var topFour = Array(contributors.prefix(4))
-                
-                //MARK: - Download Top Four contributors avatar image
-                for i in topFour.indices {
-                    let contributorImgData = await NetworkManager.shared.downloadImageData(from: topFour[i].avatarUrl)
-                    topFour[i].avatarData = contributorImgData ?? Data()
+                if context.family == .systemLarge {
+                    let contributors = try await NetworkManager.shared.getContributors(atUrl: repoToShow + "/contributors")
+                    
+                    var topFour = Array(contributors.prefix(4))
+                    
+                    //MARK: - Download Top Four contributors avatar image
+                    for i in topFour.indices {
+                        let contributorImgData = await NetworkManager.shared.downloadImageData(from: topFour[i].avatarUrl)
+                        topFour[i].avatarData = contributorImgData ?? Data()
+                    }
+                    repo.contributors = topFour
                 }
-                repo.contributors = topFour
+                
                 
                 let entry = SingleRepoEntry(date: .now, repo: repo)
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))

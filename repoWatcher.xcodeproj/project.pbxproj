@@ -12,7 +12,7 @@
 		4219636F29AC8F7C00CBFCD5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4219636E29AC8F7B00CBFCD5 /* WidgetKit.framework */; };
 		4219637129AC8F7C00CBFCD5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4219637029AC8F7C00CBFCD5 /* SwiftUI.framework */; };
 		4219637429AC8F7C00CBFCD5 /* repoWatcherWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219637329AC8F7C00CBFCD5 /* repoWatcherWidgetBundle.swift */; };
-		4219637629AC8F7C00CBFCD5 /* CompactRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219637529AC8F7C00CBFCD5 /* CompactRepoWidget.swift */; };
+		4219637629AC8F7C00CBFCD5 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219637529AC8F7C00CBFCD5 /* DoubleRepoWidget.swift */; };
 		4219637829AC8F7E00CBFCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4219637729AC8F7E00CBFCD5 /* Assets.xcassets */; };
 		4219637C29AC8F7E00CBFCD5 /* repoWatcherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4219636C29AC8F7B00CBFCD5 /* repoWatcherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4219638229ACA50C00CBFCD5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219638129ACA50C00CBFCD5 /* Repository.swift */; };
@@ -64,7 +64,7 @@
 		4219636E29AC8F7B00CBFCD5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4219637029AC8F7C00CBFCD5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		4219637329AC8F7C00CBFCD5 /* repoWatcherWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repoWatcherWidgetBundle.swift; sourceTree = "<group>"; };
-		4219637529AC8F7C00CBFCD5 /* CompactRepoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactRepoWidget.swift; sourceTree = "<group>"; };
+		4219637529AC8F7C00CBFCD5 /* DoubleRepoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleRepoWidget.swift; sourceTree = "<group>"; };
 		4219637729AC8F7E00CBFCD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4219637929AC8F7E00CBFCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4219638129ACA50C00CBFCD5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4219637329AC8F7C00CBFCD5 /* repoWatcherWidgetBundle.swift */,
-				4219637529AC8F7C00CBFCD5 /* CompactRepoWidget.swift */,
+				4219637529AC8F7C00CBFCD5 /* DoubleRepoWidget.swift */,
 				4218D8F929BEF7D0003D511B /* SingleRepoWidget.swift */,
 				4291622029BEBFEB00A853C2 /* MockData.swift */,
 				4219637729AC8F7E00CBFCD5 /* Assets.xcassets */,
@@ -277,7 +277,7 @@
 				422FF55629C017AB00F202CA /* ContributorMediumView.swift in Sources */,
 				4291622229BEBFEB00A853C2 /* MockData.swift in Sources */,
 				423698D329B8597D00816211 /* RepoMediumView.swift in Sources */,
-				4219637629AC8F7C00CBFCD5 /* CompactRepoWidget.swift in Sources */,
+				4219637629AC8F7C00CBFCD5 /* DoubleRepoWidget.swift in Sources */,
 				4218D8F829BEDF8D003D511B /* WidgetBundle.swift in Sources */,
 				4219637429AC8F7C00CBFCD5 /* repoWatcherWidgetBundle.swift in Sources */,
 				4219638329ACA50C00CBFCD5 /* Repository.swift in Sources */,
