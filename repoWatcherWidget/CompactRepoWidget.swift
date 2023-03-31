@@ -28,6 +28,7 @@ struct CompactRepoProvider: TimelineProvider {
                 var repo = try await NetworkManager.shared.getRepo(atUrl: RepoUrl.swiftNews)
                 let avatarImageData = await NetworkManager.shared.downloadImageData(from: repo.owner.avatarUrl)
                 repo.avatarData = avatarImageData ?? Data()
+      
                 
                 //MARK: - Get Bottom Repo if in Large Widget
                 var bottomRepo:Repository?
@@ -73,7 +74,9 @@ struct CompactRepoEntryView : View {
                 RepoMediumView(repo: entry.bottomRepo!)
             }
             
-        case .systemExtraLarge,.accessoryCircular, .systemSmall, .accessoryRectangular, .accessoryInline:
+        case .systemExtraLarge:
+            EmptyView()
+            case .accessoryCircular, .systemSmall, .accessoryRectangular, .accessoryInline:
             
             EmptyView()
             
@@ -94,16 +97,16 @@ struct CompactRepoWidget: Widget {
         StaticConfiguration(kind: kind, provider: CompactRepoProvider()) { entry in
             CompactRepoEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
-        .supportedFamilies([ .systemLarge])
+        .configurationDisplayName("Single repo Widget")
+        .description("Tack a single repo")
+        .supportedFamilies([ .systemMedium, .systemLarge, .systemExtraLarge])
     }
 }
 
 struct CompactRepoWidget_Previews: PreviewProvider {
     static var previews: some View {
         CompactRepoEntryView(entry: CompactRepoEntry(date: Date(),repo: MockData.repoOne, bottomRepo: MockData.repoTwo ))
-            .previewContext(WidgetPreviewContext(family: .systemLarge))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
 

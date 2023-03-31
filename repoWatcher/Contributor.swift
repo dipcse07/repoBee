@@ -11,7 +11,7 @@ struct Contributor: Identifiable {
     let login: String
     let avatarUrl:String
     let contributions:Int
-    let avatarData:Data
+    var avatarData:Data
     
 }
 extension Contributor {
