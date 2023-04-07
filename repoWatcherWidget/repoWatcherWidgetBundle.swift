@@ -11,7 +11,8 @@ import SwiftUI
 @main
 struct repoWatcherWidgetBundle: WidgetBundle {
     var body: some Widget {
-        DoubleRepoWidget()
         SingleRepoWidget()
+        DoubleRepoWidget()
+        
     }
 }

@@ -17,6 +17,13 @@ struct Repository {
     var avatarData: Data
     var contributors: [Contributor] = []
     
+    var daysSinceLastActivity: Int {
+        let formatter = ISO8601DateFormatter()
+        let lastActivityDate = formatter.date(from:  pushedAt ) ?? .now
+        let daySinceLastActivity = Calendar.current.dateComponents([.day], from: lastActivityDate, to: .now).day ?? 0
+        return daySinceLastActivity
+    }
+    
     
 }
 extension Repository {

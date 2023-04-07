@@ -8,21 +8,24 @@
 import Foundation
 import SwiftUI
 import WidgetKit
-struct SingleReopProvider: TimelineProvider {
+struct SingleReopProvider: IntentTimelineProvider {
+    
     func placeholder(in context: Context) -> SingleRepoEntry {
         SingleRepoEntry(date: .now, repo: MockData.repoOne)
     }
+
     
-    func getSnapshot(in context: Context, completion: @escaping (SingleRepoEntry) -> Void) {
+    func getSnapshot(for configuration: SelectSingleRepoIntent, in context: Context, completion: @escaping (SingleRepoEntry) -> Void) {
         let entry = SingleRepoEntry(date: .now, repo: MockData.repoOne)
         completion(entry)
     }
     
-    func getTimeline(in context: Context, completion: @escaping (Timeline<SingleRepoEntry>) -> Void) {
+    func getTimeline(for configuration: SelectSingleRepoIntent, in context: Context, completion: @escaping (Timeline<SingleRepoEntry>) -> Void) {
         let nextUpdate = Date().addingTimeInterval(43200)
         Task {
             do {
-                let repoToShow = RepoUrl.swiftNews
+                
+                let repoToShow = RepoUrl.prefix + configuration.repo!
                 var repo = try await NetworkManager.shared.getRepo(atUrl: repoToShow)
                 let avatarImageData = await NetworkManager.shared.downloadImageData(from: repo.owner.avatarUrl)
                 repo.avatarData = avatarImageData ?? Data()
@@ -50,7 +53,8 @@ struct SingleReopProvider: TimelineProvider {
         }
 
     }
-
+    
+    
 }
 
 struct SingleRepoEntry: TimelineEntry {
@@ -71,6 +75,47 @@ struct ContributorRepoEntryView : View {
                 RepoMediumView(repo: entry.repo)
                 ContributorMediumView(repo: entry.repo)
             }
+            
+        case .accessoryInline:
+            Text("\(entry.repo.name) - \(entry.repo.daysSinceLastActivity)days")
+            
+        case .accessoryCircular:
+            
+            ZStack {
+                AccessoryWidgetBackground()
+                VStack{
+                    Text("\(entry.repo.daysSinceLastActivity)")
+                    Text("Days")
+                }
+            }
+            
+            
+        case .accessoryRectangular:
+            VStack(alignment: .leading){
+                Text(entry.repo.name)
+                    .font(.headline)
+                Text("\(entry.repo.daysSinceLastActivity) days")
+                
+                HStack {
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .frame(width: 12, height: 12)
+                        .aspectRatio(contentMode: .fit)
+                    Text("\(entry.repo.watchers)")
+                    Image(systemName: "tuningfork")
+                        .resizable()
+                        .frame(width: 12, height: 12)
+                        .aspectRatio(contentMode: .fit)
+                    Text("\(entry.repo.forks)")
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .resizable()
+                        .frame(width: 12, height: 12)
+                        .aspectRatio(contentMode: .fit)
+                    Text("\(entry.repo.openIssues)")
+                }
+            }
+
+        
         default:
             EmptyView()
         }
@@ -85,12 +130,13 @@ struct SingleRepoWidget: Widget {
     let kind: String = "SingleRepoWidget"
     
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: SingleReopProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: SelectSingleRepoIntent.self, provider: SingleReopProvider()) { entry in
             ContributorRepoEntryView(entry: entry)
         }
+
         .configurationDisplayName("Single Repo Widget")
         .description("This is an example widget.")
-        .supportedFamilies([ .systemLarge, .systemMedium])
+        .supportedFamilies([ .systemLarge, .systemMedium, .accessoryCircular, .accessoryInline, .accessoryRectangular])
     }
 }
 
@@ -98,6 +144,6 @@ struct SingleRepoWidget: Widget {
 struct SingleRepoWidget_Previews: PreviewProvider {
     static var previews: some View {
         ContributorRepoEntryView(entry: SingleRepoEntry(date: Date(), repo: MockData.repoOne))
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+            .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
     }
 }
