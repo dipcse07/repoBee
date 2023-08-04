@@ -16,21 +16,41 @@
 		572BA5E82A7CA2B800460EA4 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E22A7CA2B800460EA4 /* Contributor.swift */; };
 		572BA5E92A7CA2B800460EA4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E32A7CA2B800460EA4 /* NetworkManager.swift */; };
 		572BA5EB2A7CA3CA00460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5EA2A7CA3CA00460EA4 /* Repository.swift */; };
-		572BA5F42A7CAB2D00460EA4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F32A7CAB2D00460EA4 /* WidgetKit.framework */; };
-		572BA5F62A7CAB2D00460EA4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */; };
-		572BA5F92A7CAB2D00460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5F82A7CAB2D00460EA4 /* WidgetBundle.swift */; };
-		572BA5FB2A7CAB2D00460EA4 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5FA2A7CAB2D00460EA4 /* Widget.swift */; };
-		572BA5FD2A7CAB2F00460EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572BA5FC2A7CAB2F00460EA4 /* Assets.xcassets */; };
-		572BA6012A7CAB2F00460EA4 /* WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 572BA5F12A7CAB2D00460EA4 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		572BA6202A7CB09A00460EA4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F32A7CAB2D00460EA4 /* WidgetKit.framework */; };
+		572BA6212A7CB09A00460EA4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */; };
+		572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */; };
+		572BA6262A7CB09A00460EA4 /* beeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6252A7CB09A00460EA4 /* beeWidget.swift */; };
+		572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572BA6272A7CB09B00460EA4 /* Assets.xcassets */; };
+		572BA62C2A7CB09B00460EA4 /* beeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		572BA63A2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */; };
+		572BA63B2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */; };
+		572BA63C2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */; };
+		572BA63D2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */; };
+		572BA63E2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */; };
+		572BA63F2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */; };
+		572BA6402A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */; };
+		572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */; };
+		572BA6422A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
+		572BA6432A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
+		572BA6442A7CB31700460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6352A7CB31700460EA4 /* Repository.swift */; };
+		572BA6452A7CB31700460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6352A7CB31700460EA4 /* Repository.swift */; };
+		572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6372A7CB31700460EA4 /* WidgetBundle.swift */; };
+		572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6372A7CB31700460EA4 /* WidgetBundle.swift */; };
+		572BA64A2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */; };
+		572BA64B2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */; };
+		572BA64C2A7CB31700460EA4 /* RepoMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6392A7CB31700460EA4 /* RepoMediumView.swift */; };
+		572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6392A7CB31700460EA4 /* RepoMediumView.swift */; };
+		572BA64E2A7CB65200460EA4 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E22A7CA2B800460EA4 /* Contributor.swift */; };
+		572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E32A7CA2B800460EA4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		572BA5FF2A7CAB2F00460EA4 /* PBXContainerItemProxy */ = {
+		572BA62A2A7CB09B00460EA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 572BA5C52A7CA19600460EA4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 572BA5F02A7CAB2D00460EA4;
-			remoteInfo = WidgetExtension;
+			remoteGlobalIDString = 572BA61E2A7CB09900460EA4;
+			remoteInfo = beeWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				572BA6012A7CAB2F00460EA4 /* WidgetExtension.appex in Embed Foundation Extensions */,
+				572BA62C2A7CB09B00460EA4 /* beeWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,13 +79,22 @@
 		572BA5E22A7CA2B800460EA4 /* Contributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 		572BA5E32A7CA2B800460EA4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		572BA5EA2A7CA3CA00460EA4 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		572BA5F12A7CAB2D00460EA4 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		572BA5F32A7CAB2D00460EA4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		572BA5F82A7CAB2D00460EA4 /* WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
-		572BA5FA2A7CAB2D00460EA4 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
-		572BA5FC2A7CAB2F00460EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		572BA5FE2A7CAB2F00460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = beeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeWidgetBundle.swift; sourceTree = "<group>"; };
+		572BA6252A7CB09A00460EA4 /* beeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeWidget.swift; sourceTree = "<group>"; };
+		572BA6272A7CB09B00460EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		572BA6292A7CB09B00460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsProvider.swift; sourceTree = "<group>"; };
+		572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsViewModel.swift; sourceTree = "<group>"; };
+		572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRepoWidget.swift; sourceTree = "<group>"; };
+		572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleRepoWidget.swift; sourceTree = "<group>"; };
+		572BA6342A7CB31700460EA4 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		572BA6352A7CB31700460EA4 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		572BA6372A7CB31700460EA4 /* WidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
+		572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorMediumView.swift; sourceTree = "<group>"; };
+		572BA6392A7CB31700460EA4 /* RepoMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoMediumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +105,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572BA5EE2A7CAB2D00460EA4 /* Frameworks */ = {
+		572BA61C2A7CB09900460EA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572BA5F62A7CAB2D00460EA4 /* SwiftUI.framework in Frameworks */,
-				572BA5F42A7CAB2D00460EA4 /* WidgetKit.framework in Frameworks */,
+				572BA6212A7CB09A00460EA4 /* SwiftUI.framework in Frameworks */,
+				572BA6202A7CB09A00460EA4 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				572BA5CF2A7CA19600460EA4 /* repoBee */,
-				572BA5F72A7CAB2D00460EA4 /* Widget */,
+				572BA6222A7CB09A00460EA4 /* beeWidget */,
 				572BA5F22A7CAB2D00460EA4 /* Frameworks */,
 				572BA5CE2A7CA19600460EA4 /* Products */,
 			);
@@ -102,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				572BA5CD2A7CA19600460EA4 /* repoBee.app */,
-				572BA5F12A7CAB2D00460EA4 /* WidgetExtension.appex */,
+				572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,15 +169,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		572BA5F72A7CAB2D00460EA4 /* Widget */ = {
+		572BA6222A7CB09A00460EA4 /* beeWidget */ = {
 			isa = PBXGroup;
 			children = (
-				572BA5F82A7CAB2D00460EA4 /* WidgetBundle.swift */,
-				572BA5FA2A7CAB2D00460EA4 /* Widget.swift */,
-				572BA5FC2A7CAB2F00460EA4 /* Assets.xcassets */,
-				572BA5FE2A7CAB2F00460EA4 /* Info.plist */,
+				572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */,
+				572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */,
+				572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */,
+				572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */,
+				572BA6342A7CB31700460EA4 /* MockData.swift */,
+				572BA6392A7CB31700460EA4 /* RepoMediumView.swift */,
+				572BA6352A7CB31700460EA4 /* Repository.swift */,
+				572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */,
+				572BA6372A7CB31700460EA4 /* WidgetBundle.swift */,
+				572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */,
+				572BA6252A7CB09A00460EA4 /* beeWidget.swift */,
+				572BA6272A7CB09B00460EA4 /* Assets.xcassets */,
+				572BA6292A7CB09B00460EA4 /* Info.plist */,
 			);
-			path = Widget;
+			path = beeWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,28 +204,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				572BA6002A7CAB2F00460EA4 /* PBXTargetDependency */,
+				572BA62B2A7CB09B00460EA4 /* PBXTargetDependency */,
 			);
 			name = repoBee;
 			productName = repoBee;
 			productReference = 572BA5CD2A7CA19600460EA4 /* repoBee.app */;
 			productType = "com.apple.product-type.application";
 		};
-		572BA5F02A7CAB2D00460EA4 /* WidgetExtension */ = {
+		572BA61E2A7CB09900460EA4 /* beeWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 572BA6022A7CAB2F00460EA4 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildConfigurationList = 572BA62D2A7CB09B00460EA4 /* Build configuration list for PBXNativeTarget "beeWidgetExtension" */;
 			buildPhases = (
-				572BA5ED2A7CAB2D00460EA4 /* Sources */,
-				572BA5EE2A7CAB2D00460EA4 /* Frameworks */,
-				572BA5EF2A7CAB2D00460EA4 /* Resources */,
+				572BA61B2A7CB09900460EA4 /* Sources */,
+				572BA61C2A7CB09900460EA4 /* Frameworks */,
+				572BA61D2A7CB09900460EA4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WidgetExtension;
-			productName = WidgetExtension;
-			productReference = 572BA5F12A7CAB2D00460EA4 /* WidgetExtension.appex */;
+			name = beeWidgetExtension;
+			productName = beeWidgetExtension;
+			productReference = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +241,7 @@
 					572BA5CC2A7CA19600460EA4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					572BA5F02A7CAB2D00460EA4 = {
+					572BA61E2A7CB09900460EA4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -222,7 +260,7 @@
 			projectRoot = "";
 			targets = (
 				572BA5CC2A7CA19600460EA4 /* repoBee */,
-				572BA5F02A7CAB2D00460EA4 /* WidgetExtension */,
+				572BA61E2A7CB09900460EA4 /* beeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -237,11 +275,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572BA5EF2A7CAB2D00460EA4 /* Resources */ = {
+		572BA61D2A7CB09900460EA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572BA5FD2A7CAB2F00460EA4 /* Assets.xcassets in Resources */,
+				572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,31 +291,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				572BA5EB2A7CA3CA00460EA4 /* Repository.swift in Sources */,
+				572BA6422A7CB31700460EA4 /* MockData.swift in Sources */,
+				572BA63E2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
+				572BA6442A7CB31700460EA4 /* Repository.swift in Sources */,
 				572BA5E82A7CA2B800460EA4 /* Contributor.swift in Sources */,
 				572BA5E72A7CA2B800460EA4 /* ContentView.swift in Sources */,
 				572BA5E92A7CA2B800460EA4 /* NetworkManager.swift in Sources */,
+				572BA6402A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */,
+				572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
 				572BA5E62A7CA2B800460EA4 /* HomeView.swift in Sources */,
+				572BA63C2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA5D12A7CA19600460EA4 /* repoBeeApp.swift in Sources */,
+				572BA64A2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */,
 				572BA5E52A7CA2B800460EA4 /* UserDefaults+Ext.swift in Sources */,
+				572BA64C2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
+				572BA63A2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		572BA5ED2A7CAB2D00460EA4 /* Sources */ = {
+		572BA61B2A7CB09900460EA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572BA5F92A7CAB2D00460EA4 /* WidgetBundle.swift in Sources */,
-				572BA5FB2A7CAB2D00460EA4 /* Widget.swift in Sources */,
+				572BA63B2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */,
+				572BA64B2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */,
+				572BA63F2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
+				572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */,
+				572BA64E2A7CB65200460EA4 /* Contributor.swift in Sources */,
+				572BA6452A7CB31700460EA4 /* Repository.swift in Sources */,
+				572BA6262A7CB09A00460EA4 /* beeWidget.swift in Sources */,
+				572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */,
+				572BA6432A7CB31700460EA4 /* MockData.swift in Sources */,
+				572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */,
+				572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
+				572BA63D2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */,
+				572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		572BA6002A7CAB2F00460EA4 /* PBXTargetDependency */ = {
+		572BA62B2A7CB09B00460EA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 572BA5F02A7CAB2D00460EA4 /* WidgetExtension */;
-			targetProxy = 572BA5FF2A7CAB2F00460EA4 /* PBXContainerItemProxy */;
+			target = 572BA61E2A7CB09900460EA4 /* beeWidgetExtension */;
+			targetProxy = 572BA62A2A7CB09B00460EA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,7 +514,7 @@
 			};
 			name = Release;
 		};
-		572BA6032A7CAB2F00460EA4 /* Debug */ = {
+		572BA62E2A7CB09B00460EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,8 +523,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_FILE = beeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = beeWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,7 +532,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.beeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -483,7 +541,7 @@
 			};
 			name = Debug;
 		};
-		572BA6042A7CAB2F00460EA4 /* Release */ = {
+		572BA62F2A7CB09B00460EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,8 +550,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Widget;
+				INFOPLIST_FILE = beeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = beeWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,7 +559,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.beeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -531,11 +589,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		572BA6022A7CAB2F00460EA4 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+		572BA62D2A7CB09B00460EA4 /* Build configuration list for PBXNativeTarget "beeWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				572BA6032A7CAB2F00460EA4 /* Debug */,
-				572BA6042A7CAB2F00460EA4 /* Release */,
+				572BA62E2A7CB09B00460EA4 /* Debug */,
+				572BA62F2A7CB09B00460EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

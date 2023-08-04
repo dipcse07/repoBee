@@ -1,6 +1,6 @@
 //
-//  WidgetBundle.swift
-//  Widget
+//  beeWidgetBundle.swift
+//  beeWidget
 //
 //  Created by intel on 2023/08/04.
 //
@@ -9,8 +9,8 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct WidgetBundle: WidgetBundle {
+struct beeWidgetBundle: WidgetBundle {
     var body: some Widget {
-        Widget()
+        beeWidget()
     }
 }

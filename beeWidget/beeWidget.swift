@@ -1,6 +1,6 @@
 //
-//  Widget.swift
-//  Widget
+//  beeWidget.swift
+//  beeWidget
 //
 //  Created by intel on 2023/08/04.
 //
@@ -38,7 +38,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct WidgetEntryView : View {
+struct beeWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -46,21 +46,21 @@ struct WidgetEntryView : View {
     }
 }
 
-struct Widget: Widget {
-    let kind: String = "Widget"
+struct beeWidget: Widget {
+    let kind: String = "beeWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            WidgetEntryView(entry: entry)
+            beeWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct Widget_Previews: PreviewProvider {
+struct beeWidget_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetEntryView(entry: SimpleEntry(date: Date()))
+        beeWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
