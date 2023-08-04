@@ -32,8 +32,6 @@
 		572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */; };
 		572BA6422A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
 		572BA6432A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
-		572BA6442A7CB31700460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6352A7CB31700460EA4 /* Repository.swift */; };
-		572BA6452A7CB31700460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6352A7CB31700460EA4 /* Repository.swift */; };
 		572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6372A7CB31700460EA4 /* WidgetBundle.swift */; };
 		572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6372A7CB31700460EA4 /* WidgetBundle.swift */; };
 		572BA64A2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */; };
@@ -42,6 +40,15 @@
 		572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6392A7CB31700460EA4 /* RepoMediumView.swift */; };
 		572BA64E2A7CB65200460EA4 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E22A7CA2B800460EA4 /* Contributor.swift */; };
 		572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5E32A7CA2B800460EA4 /* NetworkManager.swift */; };
+		572BA6542A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */; };
+		572BA6552A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */; };
+		572BA6572A7CB8D600460EA4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5EA2A7CA3CA00460EA4 /* Repository.swift */; };
+		572BA66D2A7CCBCD00460EA4 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5DF2A7CA2B700460EA4 /* UserDefaults+Ext.swift */; };
+		572BA6752A7CCE3800460EA4 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA65E2A7CCA3800460EA4 /* Intents.framework */; };
+		572BA6782A7CCE3800460EA4 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6772A7CCE3800460EA4 /* IntentHandler.swift */; };
+		572BA67C2A7CCE3800460EA4 /* beeIntens.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 572BA6742A7CCE3800460EA4 /* beeIntens.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		572BA6852A7CD3F700460EA4 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5DF2A7CA2B700460EA4 /* UserDefaults+Ext.swift */; };
+		572BA6862A7CD40E00460EA4 /* SelectRepoIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 			remoteGlobalIDString = 572BA61E2A7CB09900460EA4;
 			remoteInfo = beeWidgetExtension;
 		};
+		572BA67A2A7CCE3800460EA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 572BA5C52A7CA19600460EA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 572BA6732A7CCE3800460EA4;
+			remoteInfo = beeIntens;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				572BA67C2A7CCE3800460EA4 /* beeIntens.appex in Embed Foundation Extensions */,
 				572BA62C2A7CB09B00460EA4 /* beeWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -91,10 +106,17 @@
 		572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRepoWidget.swift; sourceTree = "<group>"; };
 		572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleRepoWidget.swift; sourceTree = "<group>"; };
 		572BA6342A7CB31700460EA4 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		572BA6352A7CB31700460EA4 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		572BA6372A7CB31700460EA4 /* WidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
 		572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorMediumView.swift; sourceTree = "<group>"; };
 		572BA6392A7CB31700460EA4 /* RepoMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoMediumView.swift; sourceTree = "<group>"; };
+		572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SelectRepoIntent.intentdefinition; sourceTree = "<group>"; };
+		572BA6562A7CB7ED00460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		572BA6582A7CC81F00460EA4 /* repoBee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = repoBee.entitlements; sourceTree = "<group>"; };
+		572BA65E2A7CCA3800460EA4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		572BA6742A7CCE3800460EA4 /* beeIntens.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = beeIntens.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		572BA6772A7CCE3800460EA4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		572BA6792A7CCE3800460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572BA6842A7CCFF800460EA4 /* beeIntens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beeIntens.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +136,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		572BA6712A7CCE3800460EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572BA6752A7CCE3800460EA4 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +152,7 @@
 			children = (
 				572BA5CF2A7CA19600460EA4 /* repoBee */,
 				572BA6222A7CB09A00460EA4 /* beeWidget */,
+				572BA6762A7CCE3800460EA4 /* beeIntens */,
 				572BA5F22A7CAB2D00460EA4 /* Frameworks */,
 				572BA5CE2A7CA19600460EA4 /* Products */,
 			);
@@ -132,6 +163,7 @@
 			children = (
 				572BA5CD2A7CA19600460EA4 /* repoBee.app */,
 				572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */,
+				572BA6742A7CCE3800460EA4 /* beeIntens.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +171,8 @@
 		572BA5CF2A7CA19600460EA4 /* repoBee */ = {
 			isa = PBXGroup;
 			children = (
+				572BA6582A7CC81F00460EA4 /* repoBee.entitlements */,
+				572BA6562A7CB7ED00460EA4 /* Info.plist */,
 				572BA5D02A7CA19600460EA4 /* repoBeeApp.swift */,
 				572BA5E12A7CA2B800460EA4 /* ContentView.swift */,
 				572BA5E22A7CA2B800460EA4 /* Contributor.swift */,
@@ -165,6 +199,7 @@
 			children = (
 				572BA5F32A7CAB2D00460EA4 /* WidgetKit.framework */,
 				572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */,
+				572BA65E2A7CCA3800460EA4 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,15 +213,25 @@
 				572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */,
 				572BA6342A7CB31700460EA4 /* MockData.swift */,
 				572BA6392A7CB31700460EA4 /* RepoMediumView.swift */,
-				572BA6352A7CB31700460EA4 /* Repository.swift */,
 				572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */,
 				572BA6372A7CB31700460EA4 /* WidgetBundle.swift */,
 				572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */,
 				572BA6252A7CB09A00460EA4 /* beeWidget.swift */,
 				572BA6272A7CB09B00460EA4 /* Assets.xcassets */,
 				572BA6292A7CB09B00460EA4 /* Info.plist */,
+				572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */,
 			);
 			path = beeWidget;
+			sourceTree = "<group>";
+		};
+		572BA6762A7CCE3800460EA4 /* beeIntens */ = {
+			isa = PBXGroup;
+			children = (
+				572BA6842A7CCFF800460EA4 /* beeIntens.entitlements */,
+				572BA6772A7CCE3800460EA4 /* IntentHandler.swift */,
+				572BA6792A7CCE3800460EA4 /* Info.plist */,
+			);
+			path = beeIntens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +250,7 @@
 			);
 			dependencies = (
 				572BA62B2A7CB09B00460EA4 /* PBXTargetDependency */,
+				572BA67B2A7CCE3800460EA4 /* PBXTargetDependency */,
 			);
 			name = repoBee;
 			productName = repoBee;
@@ -228,6 +274,23 @@
 			productReference = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		572BA6732A7CCE3800460EA4 /* beeIntens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572BA67D2A7CCE3800460EA4 /* Build configuration list for PBXNativeTarget "beeIntens" */;
+			buildPhases = (
+				572BA6702A7CCE3800460EA4 /* Sources */,
+				572BA6712A7CCE3800460EA4 /* Frameworks */,
+				572BA6722A7CCE3800460EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beeIntens;
+			productName = beeIntens;
+			productReference = 572BA6742A7CCE3800460EA4 /* beeIntens.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +305,9 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					572BA61E2A7CB09900460EA4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					572BA6732A7CCE3800460EA4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -261,6 +327,7 @@
 			targets = (
 				572BA5CC2A7CA19600460EA4 /* repoBee */,
 				572BA61E2A7CB09900460EA4 /* beeWidgetExtension */,
+				572BA6732A7CCE3800460EA4 /* beeIntens */,
 			);
 		};
 /* End PBXProject section */
@@ -283,6 +350,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		572BA6722A7CCE3800460EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,8 +366,8 @@
 			files = (
 				572BA5EB2A7CA3CA00460EA4 /* Repository.swift in Sources */,
 				572BA6422A7CB31700460EA4 /* MockData.swift in Sources */,
+				572BA6542A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
 				572BA63E2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
-				572BA6442A7CB31700460EA4 /* Repository.swift in Sources */,
 				572BA5E82A7CA2B800460EA4 /* Contributor.swift in Sources */,
 				572BA5E72A7CA2B800460EA4 /* ContentView.swift in Sources */,
 				572BA5E92A7CA2B800460EA4 /* NetworkManager.swift in Sources */,
@@ -315,17 +389,29 @@
 			files = (
 				572BA63B2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */,
 				572BA64B2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */,
+				572BA6552A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
 				572BA63F2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
 				572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */,
 				572BA64E2A7CB65200460EA4 /* Contributor.swift in Sources */,
-				572BA6452A7CB31700460EA4 /* Repository.swift in Sources */,
 				572BA6262A7CB09A00460EA4 /* beeWidget.swift in Sources */,
+				572BA6572A7CB8D600460EA4 /* Repository.swift in Sources */,
+				572BA66D2A7CCBCD00460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */,
 				572BA6432A7CB31700460EA4 /* MockData.swift in Sources */,
 				572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */,
 				572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
 				572BA63D2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		572BA6702A7CCE3800460EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				572BA6852A7CD3F700460EA4 /* UserDefaults+Ext.swift in Sources */,
+				572BA6782A7CCE3800460EA4 /* IntentHandler.swift in Sources */,
+				572BA6862A7CD40E00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +422,11 @@
 			isa = PBXTargetDependency;
 			target = 572BA61E2A7CB09900460EA4 /* beeWidgetExtension */;
 			targetProxy = 572BA62A2A7CB09B00460EA4 /* PBXContainerItemProxy */;
+		};
+		572BA67B2A7CCE3800460EA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 572BA6732A7CCE3800460EA4 /* beeIntens */;
+			targetProxy = 572BA67A2A7CCE3800460EA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -460,12 +551,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = repoBee/repoBee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"repoBee/Preview Content\"";
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = repoBee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,12 +583,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = repoBee/repoBee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"repoBee/Preview Content\"";
 				DEVELOPMENT_TEAM = 4NU36J8PP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = repoBee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,6 +663,58 @@
 			};
 			name = Release;
 		};
+		572BA67E2A7CCE3800460EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = beeIntens/beeIntens.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NU36J8PP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beeIntens/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = beeIntens;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.beeIntens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		572BA67F2A7CCE3800460EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = beeIntens/beeIntens.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NU36J8PP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beeIntens/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = beeIntens;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debuggerlab.repoBee.beeIntens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +741,15 @@
 			buildConfigurations = (
 				572BA62E2A7CB09B00460EA4 /* Debug */,
 				572BA62F2A7CB09B00460EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572BA67D2A7CCE3800460EA4 /* Build configuration list for PBXNativeTarget "beeIntens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				572BA67E2A7CCE3800460EA4 /* Debug */,
+				572BA67F2A7CCE3800460EA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

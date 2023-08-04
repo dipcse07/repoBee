@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct beeWidgetBundle: WidgetBundle {
     var body: some Widget {
-        beeWidget()
+        SingleRepoWidget()
+        DoubleRepoWidget()
     }
 }
