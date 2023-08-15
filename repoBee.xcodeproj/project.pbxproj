@@ -19,17 +19,13 @@
 		572BA6202A7CB09A00460EA4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F32A7CAB2D00460EA4 /* WidgetKit.framework */; };
 		572BA6212A7CB09A00460EA4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */; };
 		572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */; };
-		572BA6262A7CB09A00460EA4 /* beeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6252A7CB09A00460EA4 /* beeWidget.swift */; };
+		572BA6262A7CB09A00460EA4 /* beeWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6252A7CB09A00460EA4 /* beeWidgetProvider.swift */; };
 		572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572BA6272A7CB09B00460EA4 /* Assets.xcassets */; };
 		572BA62C2A7CB09B00460EA4 /* beeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		572BA63A2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */; };
-		572BA63B2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */; };
-		572BA63C2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */; };
-		572BA63D2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */; };
-		572BA63E2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */; };
-		572BA63F2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */; };
-		572BA6402A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */; };
-		572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */; };
+		572BA63E2A7CB31700460EA4 /* SingleRepoWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidgetProvider.swift */; };
+		572BA63F2A7CB31700460EA4 /* SingleRepoWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6322A7CB31600460EA4 /* SingleRepoWidgetProvider.swift */; };
+		572BA6402A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift */; };
+		572BA6412A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6332A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift */; };
 		572BA6422A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
 		572BA6432A7CB31700460EA4 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6342A7CB31700460EA4 /* MockData.swift */; };
 		572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6372A7CB31700460EA4 /* WidgetBundle.swift */; };
@@ -49,6 +45,39 @@
 		572BA67C2A7CCE3800460EA4 /* beeIntens.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 572BA6742A7CCE3800460EA4 /* beeIntens.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		572BA6852A7CD3F700460EA4 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BA5DF2A7CA2B700460EA4 /* UserDefaults+Ext.swift */; };
 		572BA6862A7CD40E00460EA4 /* SelectRepoIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */; };
+		579D06FA2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
+		579D06FB2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
+		579D06FC2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
+		579D06FD2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
+		579D06FE2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
+		579D06FF2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
+		579D07002A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
+		579D07012A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
+		579D07022A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
+		579D07032A89D0C50038CB20 /* NetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F92A89D0C50038CB20 /* NetworkKit */; };
+		579D07042A89D0C50038CB20 /* NetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F92A89D0C50038CB20 /* NetworkKit */; };
+		579D07052A89D0C50038CB20 /* NetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F92A89D0C50038CB20 /* NetworkKit */; };
+		579D070A2A89D8250038CB20 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07072A89D8250038CB20 /* ArrayExtensions.swift */; };
+		579D070B2A89D8250038CB20 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07072A89D8250038CB20 /* ArrayExtensions.swift */; };
+		579D070C2A89D8250038CB20 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07072A89D8250038CB20 /* ArrayExtensions.swift */; };
+		579D070D2A89D8250038CB20 /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07082A89D8250038CB20 /* ThemeExtensions.swift */; };
+		579D070E2A89D8250038CB20 /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07082A89D8250038CB20 /* ThemeExtensions.swift */; };
+		579D070F2A89D8250038CB20 /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07082A89D8250038CB20 /* ThemeExtensions.swift */; };
+		579D07102A89D8250038CB20 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07092A89D8250038CB20 /* DateExtensions.swift */; };
+		579D07112A89D8250038CB20 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07092A89D8250038CB20 /* DateExtensions.swift */; };
+		579D07122A89D8250038CB20 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07092A89D8250038CB20 /* DateExtensions.swift */; };
+		579D07142A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */; };
+		579D07152A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */; };
+		579D07162A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */; };
+		579D07182A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */; };
+		579D07192A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */; };
+		579D071A2A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */; };
+		579D071C2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */; };
+		579D071D2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */; };
+		579D071E2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */; };
+		579D07202A8B0B220038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D071F2A8B0B220038CB20 /* NetworkKit */; };
+		579D07222A8B0B290038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07212A8B0B290038CB20 /* NetworkKit */; };
+		579D07242A8B0B2F0038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07232A8B0B2F0038CB20 /* NetworkKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,13 +127,11 @@
 		572BA5F52A7CAB2D00460EA4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = beeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeWidgetBundle.swift; sourceTree = "<group>"; };
-		572BA6252A7CB09A00460EA4 /* beeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeWidget.swift; sourceTree = "<group>"; };
+		572BA6252A7CB09A00460EA4 /* beeWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beeWidgetProvider.swift; sourceTree = "<group>"; };
 		572BA6272A7CB09B00460EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572BA6292A7CB09B00460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsProvider.swift; sourceTree = "<group>"; };
-		572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsViewModel.swift; sourceTree = "<group>"; };
-		572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRepoWidget.swift; sourceTree = "<group>"; };
-		572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleRepoWidget.swift; sourceTree = "<group>"; };
+		572BA6322A7CB31600460EA4 /* SingleRepoWidgetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRepoWidgetProvider.swift; sourceTree = "<group>"; };
+		572BA6332A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleRepoWidgetProvider.swift; sourceTree = "<group>"; };
 		572BA6342A7CB31700460EA4 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		572BA6372A7CB31700460EA4 /* WidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetBundle.swift; sourceTree = "<group>"; };
 		572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributorMediumView.swift; sourceTree = "<group>"; };
@@ -117,6 +144,16 @@
 		572BA6772A7CCE3800460EA4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		572BA6792A7CCE3800460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572BA6842A7CCFF800460EA4 /* beeIntens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beeIntens.entitlements; sourceTree = "<group>"; };
+		579D06F62A89D0C50038CB20 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		579D06F72A89D0C50038CB20 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceKit; sourceTree = "<group>"; };
+		579D06F82A89D0C50038CB20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		579D06F92A89D0C50038CB20 /* NetworkKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkKit; sourceTree = "<group>"; };
+		579D07072A89D8250038CB20 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		579D07082A89D8250038CB20 /* ThemeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeExtensions.swift; sourceTree = "<group>"; };
+		579D07092A89D8250038CB20 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsGraphWidgetView.swift; sourceTree = "<group>"; };
+		579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsViewModel.swift; sourceTree = "<group>"; };
+		579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D07202A8B0B220038CB20 /* NetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D07222A8B0B290038CB20 /* NetworkKit in Frameworks */,
 				572BA6212A7CB09A00460EA4 /* SwiftUI.framework in Frameworks */,
 				572BA6202A7CB09A00460EA4 /* WidgetKit.framework in Frameworks */,
 			);
@@ -140,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D07242A8B0B2F0038CB20 /* NetworkKit in Frameworks */,
 				572BA6752A7CCE3800460EA4 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +211,7 @@
 		572BA5CF2A7CA19600460EA4 /* repoBee */ = {
 			isa = PBXGroup;
 			children = (
+				579D06F52A89D0C50038CB20 /* resources */,
 				572BA6582A7CC81F00460EA4 /* repoBee.entitlements */,
 				572BA6562A7CB7ED00460EA4 /* Info.plist */,
 				572BA5D02A7CA19600460EA4 /* repoBeeApp.swift */,
@@ -181,6 +222,7 @@
 				572BA5DF2A7CA2B700460EA4 /* UserDefaults+Ext.swift */,
 				572BA5EA2A7CA3CA00460EA4 /* Repository.swift */,
 				572BA5D42A7CA19800460EA4 /* Assets.xcassets */,
+				579D07062A89D8250038CB20 /* Extensions */,
 				572BA5D62A7CA19800460EA4 /* Preview Content */,
 			);
 			path = repoBee;
@@ -207,16 +249,17 @@
 		572BA6222A7CB09A00460EA4 /* beeWidget */ = {
 			isa = PBXGroup;
 			children = (
+				579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */,
+				579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */,
+				579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */,
 				572BA6382A7CB31700460EA4 /* ContributorMediumView.swift */,
-				572BA6332A7CB31700460EA4 /* DoubleRepoWidget.swift */,
-				572BA6302A7CB31600460EA4 /* GitHubContributionsProvider.swift */,
-				572BA6312A7CB31600460EA4 /* GitHubContributionsViewModel.swift */,
+				572BA6332A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift */,
 				572BA6342A7CB31700460EA4 /* MockData.swift */,
 				572BA6392A7CB31700460EA4 /* RepoMediumView.swift */,
-				572BA6322A7CB31600460EA4 /* SingleRepoWidget.swift */,
+				572BA6322A7CB31600460EA4 /* SingleRepoWidgetProvider.swift */,
 				572BA6372A7CB31700460EA4 /* WidgetBundle.swift */,
 				572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */,
-				572BA6252A7CB09A00460EA4 /* beeWidget.swift */,
+				572BA6252A7CB09A00460EA4 /* beeWidgetProvider.swift */,
 				572BA6272A7CB09B00460EA4 /* Assets.xcassets */,
 				572BA6292A7CB09B00460EA4 /* Info.plist */,
 				572BA6532A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition */,
@@ -232,6 +275,27 @@
 				572BA6792A7CCE3800460EA4 /* Info.plist */,
 			);
 			path = beeIntens;
+			sourceTree = "<group>";
+		};
+		579D06F52A89D0C50038CB20 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				579D06F62A89D0C50038CB20 /* LICENSE */,
+				579D06F72A89D0C50038CB20 /* InterfaceKit */,
+				579D06F82A89D0C50038CB20 /* README.md */,
+				579D06F92A89D0C50038CB20 /* NetworkKit */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		579D07062A89D8250038CB20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				579D07072A89D8250038CB20 /* ArrayExtensions.swift */,
+				579D07082A89D8250038CB20 /* ThemeExtensions.swift */,
+				579D07092A89D8250038CB20 /* DateExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +317,9 @@
 				572BA67B2A7CCE3800460EA4 /* PBXTargetDependency */,
 			);
 			name = repoBee;
+			packageProductDependencies = (
+				579D071F2A8B0B220038CB20 /* NetworkKit */,
+			);
 			productName = repoBee;
 			productReference = 572BA5CD2A7CA19600460EA4 /* repoBee.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +337,9 @@
 			dependencies = (
 			);
 			name = beeWidgetExtension;
+			packageProductDependencies = (
+				579D07212A8B0B290038CB20 /* NetworkKit */,
+			);
 			productName = beeWidgetExtension;
 			productReference = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -287,6 +357,9 @@
 			dependencies = (
 			);
 			name = beeIntens;
+			packageProductDependencies = (
+				579D07232A8B0B2F0038CB20 /* NetworkKit */,
+			);
 			productName = beeIntens;
 			productReference = 572BA6742A7CCE3800460EA4 /* beeIntens.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -337,6 +410,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D07032A89D0C50038CB20 /* NetworkKit in Resources */,
+				579D06FA2A89D0C50038CB20 /* LICENSE in Resources */,
+				579D06FD2A89D0C50038CB20 /* InterfaceKit in Resources */,
+				579D07002A89D0C50038CB20 /* README.md in Resources */,
 				572BA5D82A7CA19800460EA4 /* Preview Assets.xcassets in Resources */,
 				572BA5D52A7CA19800460EA4 /* Assets.xcassets in Resources */,
 			);
@@ -346,6 +423,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D06FB2A89D0C50038CB20 /* LICENSE in Resources */,
+				579D06FE2A89D0C50038CB20 /* InterfaceKit in Resources */,
+				579D07012A89D0C50038CB20 /* README.md in Resources */,
+				579D07042A89D0C50038CB20 /* NetworkKit in Resources */,
 				572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +435,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579D07052A89D0C50038CB20 /* NetworkKit in Resources */,
+				579D07022A89D0C50038CB20 /* README.md in Resources */,
+				579D06FC2A89D0C50038CB20 /* LICENSE in Resources */,
+				579D06FF2A89D0C50038CB20 /* InterfaceKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,19 +452,23 @@
 				572BA5EB2A7CA3CA00460EA4 /* Repository.swift in Sources */,
 				572BA6422A7CB31700460EA4 /* MockData.swift in Sources */,
 				572BA6542A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
-				572BA63E2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
+				572BA63E2A7CB31700460EA4 /* SingleRepoWidgetProvider.swift in Sources */,
 				572BA5E82A7CA2B800460EA4 /* Contributor.swift in Sources */,
+				579D07182A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA5E72A7CA2B800460EA4 /* ContentView.swift in Sources */,
+				579D07102A89D8250038CB20 /* DateExtensions.swift in Sources */,
 				572BA5E92A7CA2B800460EA4 /* NetworkManager.swift in Sources */,
-				572BA6402A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */,
+				572BA6402A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift in Sources */,
 				572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
+				579D071C2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */,
 				572BA5E62A7CA2B800460EA4 /* HomeView.swift in Sources */,
-				572BA63C2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */,
+				579D070D2A89D8250038CB20 /* ThemeExtensions.swift in Sources */,
+				579D070A2A89D8250038CB20 /* ArrayExtensions.swift in Sources */,
 				572BA5D12A7CA19600460EA4 /* repoBeeApp.swift in Sources */,
 				572BA64A2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */,
 				572BA5E52A7CA2B800460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA64C2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
-				572BA63A2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */,
+				579D07142A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,21 +476,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572BA63B2A7CB31700460EA4 /* GitHubContributionsProvider.swift in Sources */,
+				579D071D2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */,
 				572BA64B2A7CB31700460EA4 /* ContributorMediumView.swift in Sources */,
 				572BA6552A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
-				572BA63F2A7CB31700460EA4 /* SingleRepoWidget.swift in Sources */,
-				572BA6412A7CB31700460EA4 /* DoubleRepoWidget.swift in Sources */,
+				572BA63F2A7CB31700460EA4 /* SingleRepoWidgetProvider.swift in Sources */,
+				579D070E2A89D8250038CB20 /* ThemeExtensions.swift in Sources */,
+				579D07112A89D8250038CB20 /* DateExtensions.swift in Sources */,
+				572BA6412A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift in Sources */,
 				572BA64E2A7CB65200460EA4 /* Contributor.swift in Sources */,
-				572BA6262A7CB09A00460EA4 /* beeWidget.swift in Sources */,
+				572BA6262A7CB09A00460EA4 /* beeWidgetProvider.swift in Sources */,
+				579D07152A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */,
 				572BA6572A7CB8D600460EA4 /* Repository.swift in Sources */,
 				572BA66D2A7CCBCD00460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */,
 				572BA6432A7CB31700460EA4 /* MockData.swift in Sources */,
 				572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */,
+				579D07192A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
-				572BA63D2A7CB31700460EA4 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
+				579D070B2A89D8250038CB20 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +504,13 @@
 			files = (
 				572BA6852A7CD3F700460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA6782A7CCE3800460EA4 /* IntentHandler.swift in Sources */,
+				579D070F2A89D8250038CB20 /* ThemeExtensions.swift in Sources */,
+				579D071E2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */,
+				579D071A2A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */,
+				579D07162A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */,
 				572BA6862A7CD40E00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
+				579D070C2A89D8250038CB20 /* ArrayExtensions.swift in Sources */,
+				579D07122A89D8250038CB20 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +854,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		579D071F2A8B0B220038CB20 /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkKit;
+		};
+		579D07212A8B0B290038CB20 /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkKit;
+		};
+		579D07232A8B0B2F0038CB20 /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 572BA5C52A7CA19600460EA4 /* Project object */;
 }
