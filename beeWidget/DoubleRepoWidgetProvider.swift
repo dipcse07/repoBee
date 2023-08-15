@@ -61,36 +61,14 @@ struct DoubleRepoEntry: TimelineEntry {
 }
 
 struct DoubleRepoEntryView : View {
-    @Environment(\.widgetFamily) var family
+  
     var entry: DoubleRepoProvider.Entry
-    
-    
-
     var body: some View {
-        switch family {
-        case .systemMedium:
-            RepoMediumView(repo: entry.topRepo)
-      
-        case .systemLarge:
             VStack (spacing:30){
                 RepoMediumView(repo: entry.topRepo)
                 RepoMediumView(repo: entry.bottomRepo)
             }
-            
-        case .systemExtraLarge:
-            EmptyView()
-            case .accessoryCircular, .systemSmall, .accessoryRectangular, .accessoryInline:
-            
-            EmptyView()
-            
-        
-        @unknown default:
-            EmptyView()
-        }
-        
     }
-    
-    
 }
 
 struct DoubleRepoWidget: Widget {

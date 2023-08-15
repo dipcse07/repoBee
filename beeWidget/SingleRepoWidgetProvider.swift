@@ -63,7 +63,7 @@ struct SingleRepoEntry: TimelineEntry {
 }
 
 
-struct ContributorRepoEntryView : View {
+struct SingleRepoEntryView : View {
     @Environment(\.widgetFamily) var family
     var entry: SingleRepoEntry
     var body: some View {
@@ -114,8 +114,6 @@ struct ContributorRepoEntryView : View {
                     Text("\(entry.repo.openIssues)")
                 }
             }
-
-        
         default:
             EmptyView()
         }
@@ -131,7 +129,7 @@ struct SingleRepoWidget: Widget {
     
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: SelectSingleRepoIntent.self, provider: SingleReopProvider()) { entry in
-            ContributorRepoEntryView(entry: entry)
+            SingleRepoEntryView(entry: entry)
         }
 
         .configurationDisplayName("Single Repo Widget")
@@ -143,7 +141,7 @@ struct SingleRepoWidget: Widget {
 
 struct SingleRepoWidget_Previews: PreviewProvider {
     static var previews: some View {
-        ContributorRepoEntryView(entry: SingleRepoEntry(date: Date(), repo: MockData.repoOne))
-            .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+        SingleRepoEntryView(entry: SingleRepoEntry(date: Date(), repo: MockData.repoOne))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

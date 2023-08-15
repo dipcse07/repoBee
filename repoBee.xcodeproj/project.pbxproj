@@ -48,9 +48,6 @@
 		579D06FA2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
 		579D06FB2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
 		579D06FC2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
-		579D06FD2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
-		579D06FE2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
-		579D06FF2A89D0C50038CB20 /* InterfaceKit in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F72A89D0C50038CB20 /* InterfaceKit */; };
 		579D07002A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
 		579D07012A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
 		579D07022A89D0C50038CB20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F82A89D0C50038CB20 /* README.md */; };
@@ -145,7 +142,6 @@
 		572BA6792A7CCE3800460EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		572BA6842A7CCFF800460EA4 /* beeIntens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beeIntens.entitlements; sourceTree = "<group>"; };
 		579D06F62A89D0C50038CB20 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		579D06F72A89D0C50038CB20 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InterfaceKit; sourceTree = "<group>"; };
 		579D06F82A89D0C50038CB20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		579D06F92A89D0C50038CB20 /* NetworkKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkKit; sourceTree = "<group>"; };
 		579D07072A89D8250038CB20 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
@@ -154,6 +150,7 @@
 		579D07132A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsGraphWidgetView.swift; sourceTree = "<group>"; };
 		579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsViewModel.swift; sourceTree = "<group>"; };
 		579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsProvider.swift; sourceTree = "<group>"; };
+		579D07252A8B100A0038CB20 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = InterfaceKit; path = ../../../../InterfaceKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				579D06F62A89D0C50038CB20 /* LICENSE */,
-				579D06F72A89D0C50038CB20 /* InterfaceKit */,
+				579D07252A8B100A0038CB20 /* InterfaceKit */,
 				579D06F82A89D0C50038CB20 /* README.md */,
 				579D06F92A89D0C50038CB20 /* NetworkKit */,
 			);
@@ -412,7 +409,6 @@
 			files = (
 				579D07032A89D0C50038CB20 /* NetworkKit in Resources */,
 				579D06FA2A89D0C50038CB20 /* LICENSE in Resources */,
-				579D06FD2A89D0C50038CB20 /* InterfaceKit in Resources */,
 				579D07002A89D0C50038CB20 /* README.md in Resources */,
 				572BA5D82A7CA19800460EA4 /* Preview Assets.xcassets in Resources */,
 				572BA5D52A7CA19800460EA4 /* Assets.xcassets in Resources */,
@@ -424,7 +420,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				579D06FB2A89D0C50038CB20 /* LICENSE in Resources */,
-				579D06FE2A89D0C50038CB20 /* InterfaceKit in Resources */,
 				579D07012A89D0C50038CB20 /* README.md in Resources */,
 				579D07042A89D0C50038CB20 /* NetworkKit in Resources */,
 				572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */,
@@ -438,7 +433,6 @@
 				579D07052A89D0C50038CB20 /* NetworkKit in Resources */,
 				579D07022A89D0C50038CB20 /* README.md in Resources */,
 				579D06FC2A89D0C50038CB20 /* LICENSE in Resources */,
-				579D06FF2A89D0C50038CB20 /* InterfaceKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
