@@ -32,6 +32,49 @@ class NetworkManager {
         
     }
     
+    func getCommitsAndDates(atUrl urlString: String) async throws -> [String: Int]{
+        guard let url = URL (string: urlString) else {
+            throw NetworkError.invalidUrl
+        }
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw NetworkError.invalidResponse
+        }
+        var commitsByDate: [String: Int] = [:]
+        do {
+            if let commits = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
+                var calender = Calendar.current
+                for commit in commits {
+                    if let dateString = (commit["commit"] as? [String: Any])?["author"] as? [String: Any]? {
+                        
+                        //      print(dateString)
+                        let dateStr = dateString!["date"] as! String// Extract YYYY-MM-DD
+                        //print(dateStr)
+                        let formatter = ISO8601DateFormatter()
+                        
+                        let lastActivityDate = formatter.date(from: dateStr ) ?? .now
+                        let dateComponent =  calender.dateComponents([.year, .month, .day], from: lastActivityDate)
+                        
+                        let extractedDateString = String(format: "%04d-%02d-%02d", dateComponent.year!, dateComponent.month!, dateComponent.day!)
+                        
+                        
+                        if let count = commitsByDate[extractedDateString] {
+                            commitsByDate[extractedDateString] = count + 1
+                        } else {
+                            commitsByDate[extractedDateString] = 1
+                        }
+                    }
+                }
+               
+            }
+            return commitsByDate
+        } catch {
+            print("Error:", error.localizedDescription)
+            throw NetworkError.invalidRepoData
+        }
+        
+    }
+    
     func getContributors(atUrl urlString: String) async throws -> [Contributor] {
         guard let url = URL (string: urlString) else {
             throw NetworkError.invalidUrl

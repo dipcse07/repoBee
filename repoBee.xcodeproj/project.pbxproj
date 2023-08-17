@@ -75,6 +75,7 @@
 		579D07202A8B0B220038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D071F2A8B0B220038CB20 /* NetworkKit */; };
 		579D07222A8B0B290038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07212A8B0B290038CB20 /* NetworkKit */; };
 		579D07242A8B0B2F0038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07232A8B0B2F0038CB20 /* NetworkKit */; };
+		57AC548D2A8E1B20008D49E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572BA5D42A7CA19800460EA4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -423,6 +424,7 @@
 				579D07012A89D0C50038CB20 /* README.md in Resources */,
 				579D07042A89D0C50038CB20 /* NetworkKit in Resources */,
 				572BA6282A7CB09B00460EA4 /* Assets.xcassets in Resources */,
+				57AC548D2A8E1B20008D49E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
