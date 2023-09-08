@@ -8,6 +8,8 @@
 import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
+    
+   // let theme: SelectSingleRepoIntent.repo
     let decoder = JSONDecoder()
     private init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -67,6 +69,7 @@ class NetworkManager {
                 }
                
             }
+            print(commitsByDate)
             return commitsByDate
         } catch {
             print("Error:", error.localizedDescription)

@@ -7,11 +7,10 @@
 
 import SwiftUI
 import WidgetKit
+import InterfaceKit
 
 struct RepoMediumView: View {
     let repo: Repository
-    
-
     
 
     var body: some View {
@@ -30,6 +29,8 @@ struct RepoMediumView: View {
                         .lineLimit(1)
                 }
                 .padding(.bottom, 6 )
+               // ContributionsView(rowsCount: 3, columnsCount: 8, colors: <#T##[[Color]]#>)
+                ContributionsView(rowsCount: 3, columnsCount: 10, colors: [[.green]])
                 HStack {
                     StatLabel(value: repo.watchers, sysImageName: "star.fill")
                     StatLabel(value: repo.forks, sysImageName: "tuningfork")

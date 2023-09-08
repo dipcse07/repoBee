@@ -8,11 +8,13 @@
 		<dict>
 			<key>IntentsRestrictedWhileLocked</key>
 			<array/>
+			<key>IntentsRestrictedWhileProtectedDataUnavailable</key>
+			<array/>
 			<key>IntentsSupported</key>
 			<array>
-				<string>intent</string>
 				<string>SelectSingleRepoIntent</string>
 				<string>SelectTwoReposIntent</string>
+				<string>intent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
