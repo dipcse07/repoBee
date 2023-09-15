@@ -53,6 +53,8 @@
 		572F54742A935143003C005A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F54712A935142003C005A /* ArrayExtensions.swift */; };
 		572F54752A935143003C005A /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F54722A935142003C005A /* ThemeExtensions.swift */; };
 		572F54762A935143003C005A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F54732A935142003C005A /* DateExtensions.swift */; };
+		5768E1772AB3FC9000F174BB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5768E1762AB3FC9000F174BB /* OrderedCollections */; };
+		5768E1792AB3FD5700F174BB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5768E1782AB3FD5700F174BB /* OrderedCollections */; };
 		579D06FA2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
 		579D06FB2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
 		579D06FC2A89D0C50038CB20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 579D06F62A89D0C50038CB20 /* LICENSE */; };
@@ -163,6 +165,7 @@
 			files = (
 				579D07202A8B0B220038CB20 /* NetworkKit in Frameworks */,
 				5708313A2AA81738004CBD68 /* InterfaceKit in Frameworks */,
+				5768E1772AB3FC9000F174BB /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5768E1792AB3FD5700F174BB /* OrderedCollections in Frameworks */,
 				579D07222A8B0B290038CB20 /* NetworkKit in Frameworks */,
 				572F54622A932F61003C005A /* InterfaceKit in Frameworks */,
 				572BA6212A7CB09A00460EA4 /* SwiftUI.framework in Frameworks */,
@@ -324,6 +328,7 @@
 			packageProductDependencies = (
 				579D071F2A8B0B220038CB20 /* NetworkKit */,
 				570831392AA81738004CBD68 /* InterfaceKit */,
+				5768E1762AB3FC9000F174BB /* OrderedCollections */,
 			);
 			productName = repoBee;
 			productReference = 572BA5CD2A7CA19600460EA4 /* repoBee.app */;
@@ -345,6 +350,7 @@
 			packageProductDependencies = (
 				579D07212A8B0B290038CB20 /* NetworkKit */,
 				572F54612A932F61003C005A /* InterfaceKit */,
+				5768E1782AB3FD5700F174BB /* OrderedCollections */,
 			);
 			productName = beeWidgetExtension;
 			productReference = 572BA61F2A7CB09900460EA4 /* beeWidgetExtension.appex */;
@@ -401,6 +407,9 @@
 				Base,
 			);
 			mainGroup = 572BA5C42A7CA19600460EA4;
+			packageReferences = (
+				5768E1752AB3FC9000F174BB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 572BA5CE2A7CA19600460EA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -859,6 +868,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		5768E1752AB3FC9000F174BB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		570831392AA81738004CBD68 /* InterfaceKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -871,6 +891,16 @@
 		572F54612A932F61003C005A /* InterfaceKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = InterfaceKit;
+		};
+		5768E1762AB3FC9000F174BB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5768E1752AB3FC9000F174BB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		5768E1782AB3FD5700F174BB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5768E1752AB3FC9000F174BB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 		579D071F2A8B0B220038CB20 /* NetworkKit */ = {
 			isa = XCSwiftPackageProductDependency;

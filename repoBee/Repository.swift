@@ -16,7 +16,7 @@ struct Repository {
     let pushedAt: String
     var avatarData: Data
     var contributors: [Contributor] = []
-    var commitsByDates: [String:Int] = [:]
+//  var commitsByDates: [String:Int] = [:]
     
     var daysSinceLastActivity: Int {
         let formatter = ISO8601DateFormatter()

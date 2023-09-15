@@ -42,9 +42,10 @@ struct SingleReopProvider: IntentTimelineProvider {
                     repo.contributors = topFour
                     
                     //MARK: Download Commits By Dates
-                    
-                }
                 
+                }
+                let commits = try await NetworkManager.shared.getCommitsAndDates(atUrl: RepoUrl.googleSignIn + "/commits")
+                print(commits)
                 
                 let entry = SingleRepoEntry(date: .now, repo: repo)
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
@@ -148,3 +149,5 @@ struct SingleRepoWidget_Previews: PreviewProvider {
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
+
+

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OrderedCollections
 class NetworkManager {
     static let shared = NetworkManager()
     
@@ -34,7 +35,7 @@ class NetworkManager {
         
     }
     
-    func getCommitsAndDates(atUrl urlString: String) async throws -> [String: Int]{
+    func getCommitsAndDates(atUrl urlString: String) async throws -> OrderedDictionary<String,Int> {
         guard let url = URL (string: urlString) else {
             throw NetworkError.invalidUrl
         }
@@ -43,17 +44,18 @@ class NetworkManager {
             throw NetworkError.invalidResponse
         }
         var commitsByDate: [String: Int] = [:]
+        
         do {
             if let commits = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
-                var calender = Calendar.current
+                let calender = Calendar.current
                 for commit in commits {
                     if let dateString = (commit["commit"] as? [String: Any])?["author"] as? [String: Any]? {
                         
                         //      print(dateString)
                         let dateStr = dateString!["date"] as! String// Extract YYYY-MM-DD
-                        //print(dateStr)
-                        let formatter = ISO8601DateFormatter()
+                      //  print(dateStr)
                         
+                        let formatter = ISO8601DateFormatter()
                         let lastActivityDate = formatter.date(from: dateStr ) ?? .now
                         let dateComponent =  calender.dateComponents([.year, .month, .day], from: lastActivityDate)
                         
@@ -69,8 +71,29 @@ class NetworkManager {
                 }
                
             }
-            print(commitsByDate)
-            return commitsByDate
+            //print(commitsByDate)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let sortedKeys = commitsByDate.keys.sorted {
+                if let date1 = dateFormatter.date(from: $0), let date2 = dateFormatter.date(from: $1) {
+                   // print("date 1: ", date1," date2: ", date2)
+                    return date1 < date2
+                }
+                return false
+            }
+
+            // Create a sorted dictionary
+            print(sortedKeys)
+            var sortedDictionary: OrderedDictionary<String,Int> = [:]
+            for key in sortedKeys {
+                sortedDictionary[key] = commitsByDate[key]
+                
+            }
+
+            print(sortedDictionary)
+            
+            
+            return sortedDictionary //commitsByDate
         } catch {
             print("Error:", error.localizedDescription)
             throw NetworkError.invalidRepoData
