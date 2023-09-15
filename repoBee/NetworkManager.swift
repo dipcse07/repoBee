@@ -7,15 +7,24 @@
 
 import Foundation
 import OrderedCollections
+import NetworkKit
+import SwiftUI
+
 class NetworkManager {
     static let shared = NetworkManager()
     
    // let theme: SelectSingleRepoIntent.repo
     let decoder = JSONDecoder()
+    let configuration = SelectSingleRepoIntent()
     private init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .iso8601
         
+    }
+    
+    
+    var theme: Theme {
+        configuration.theme
     }
     
     func getRepo(atUrl urlString: String) async throws -> Repository {
@@ -35,7 +44,9 @@ class NetworkManager {
         
     }
     
-    func getCommitsAndDates(atUrl urlString: String) async throws -> OrderedDictionary<String,Int> {
+    
+    
+    func getColorsFromCommitsAndDates(atUrl urlString: String) async throws -> [[Color]] {
         guard let url = URL (string: urlString) else {
             throw NetworkError.invalidUrl
         }
@@ -71,9 +82,11 @@ class NetworkManager {
                 }
                
             }
+            
             //print(commitsByDate)
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
+            
             let sortedKeys = commitsByDate.keys.sorted {
                 if let date1 = dateFormatter.date(from: $0), let date2 = dateFormatter.date(from: $1) {
                    // print("date 1: ", date1," date2: ", date2)
@@ -83,17 +96,70 @@ class NetworkManager {
             }
 
             // Create a sorted dictionary
-            print(sortedKeys)
+           
             var sortedDictionary: OrderedDictionary<String,Int> = [:]
             for key in sortedKeys {
                 sortedDictionary[key] = commitsByDate[key]
                 
             }
+            
+            //MARK: Get number of dates
+            
+            var numberOfDays = 0
+            let startDateString = sortedDictionary.keys.first ?? ""
+            let endDateString = sortedDictionary.keys.last ?? ""
 
-            print(sortedDictionary)
+            if let startDate = dateFormatter.date(from: startDateString),
+               let endDate = dateFormatter.date(from: endDateString) {
+                let calendar = Calendar.current
+                let components = calendar.dateComponents([.day], from: startDate, to: endDate)
+                
+                if let days = components.day {
+                    print("Number of days between \(startDateString) and \(endDateString): \(days) days")
+                    numberOfDays = days
+                } else {
+                    print("Unable to calculate the number of days.")
+                }
+            } else {
+                print("Invalid date format.")
+            }
+            
+            numberOfDays = numberOfDays > 140 ? 140: numberOfDays
+            
+            let startDateFrom = endDateString
+            var currentDate = dateFormatter.date(from: startDateFrom)!
+
+            var dateArray: [Date] = []
+
+            // Generate dates and add them to the array
+            for _ in 0..<numberOfDays {
+                dateArray.append(currentDate)
+                currentDate = Calendar.current.date(byAdding: .day, value: -1, to: currentDate)!
+            }
+
+            // Reverse the array to have the dates in ascending order
+           // print(dateArray)
+            dateArray.reverse()
+
+            // Print the sorted array of dates
+            var sortedDictionary2: OrderedDictionary<String,Int> = [:]
+            for date in dateArray {
+                let key = dateFormatter.string(from: date)
+                if sortedDictionary.keys.contains(key) {
+                    sortedDictionary2[key] = sortedDictionary[key]
+                }else {
+                    sortedDictionary2[key] = 0
+                }
+            }
+            
+            print(sortedDictionary2)
             
             
-            return sortedDictionary //commitsByDate
+            let values = sortedDictionary2.values.map({ value in
+                return [theme.color(for: GitHub.Contribution.Level(rawValue: value) ?? .zero)]
+            })
+           
+            return values //commitsByDate
         } catch {
             print("Error:", error.localizedDescription)
             throw NetworkError.invalidRepoData

@@ -44,8 +44,9 @@ struct SingleReopProvider: IntentTimelineProvider {
                     //MARK: Download Commits By Dates
                 
                 }
-                let commits = try await NetworkManager.shared.getCommitsAndDates(atUrl: RepoUrl.googleSignIn + "/commits")
-                print(commits)
+                let colorsValue = try await NetworkManager.shared.getColorsFromCommitsAndDates(atUrl: RepoUrl.prefix + configuration.repo! + "/commits")
+                repo.colors = colorsValue
+              
                 
                 let entry = SingleRepoEntry(date: .now, repo: repo)
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
@@ -146,7 +147,7 @@ struct SingleRepoWidget: Widget {
 struct SingleRepoWidget_Previews: PreviewProvider {
     static var previews: some View {
         SingleRepoEntryView(entry: SingleRepoEntry(date: Date(), repo: MockData.repoOne))
-            .previewContext(WidgetPreviewContext(family: .systemMedium))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }
 

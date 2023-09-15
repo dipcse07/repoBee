@@ -27,10 +27,10 @@ struct GitHubContributionsViewModel {
 //        let tilesCount = rowsCount * columnsCount - (rowsCount - Calendar.current.component(.weekday, from: lastDate))
 //        return contributions.suffix(tilesCount).map(\.level).chunked(into: rowsCount)
         
-        let values =  contributions.values.map {theme.color(for: GitHub.Contribution.Level(rawValue: $0) ?? .zero)
+       // let values =  contributions.values.map { [theme.color(for: GitHub.Contribution.Level(rawValue: $0) ?? .zero])
             
-        }
-        print(values)
+     //   }
+        //print(values)
         return [[3]]
     }
 

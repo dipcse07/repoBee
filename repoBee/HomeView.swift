@@ -74,10 +74,9 @@ struct HomeView: View {
                     
                 }
                 repos = retrivedRepos
-                Task {
-                    let commits = try await NetworkManager.shared.getCommitsAndDates(atUrl: RepoUrl.googleSignIn + "/commits")
-                    //print(commits)
-                }
+                
+                
+                
             }
         }
     }

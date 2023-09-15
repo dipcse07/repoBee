@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 public extension GitHub {
     struct Contribution {
@@ -20,6 +21,8 @@ public extension GitHub {
         public enum Level: Int, CaseIterable {
             case zero, first, second, third, fourth
         }
+        
+    
 
         public init(date: Date, level: Level) {
             self.date = date

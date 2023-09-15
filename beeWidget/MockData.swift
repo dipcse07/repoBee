@@ -14,13 +14,16 @@ struct MockData {
                                         watchers: 0,
                                         openIssues: 0,
                                         pushedAt: "2023-02-27",
+                                    
                                         avatarData: Data(),
+                                    
                                     contributors: [
                                         Contributor(login: "Sean allan", avatarUrl: "", contributions: 43, avatarData: Data()),
                                         Contributor(login: "Michael Jordan ", avatarUrl: "", contributions: 22, avatarData: Data()),
                                         Contributor(login: "Steph Carry", avatarUrl: "", contributions: 34, avatarData: Data()),
                                         Contributor(login: "Rabab Shayra", avatarUrl: "", contributions: 43, avatarData: Data())
-                                    ]
+                                    ],
+                                    colors: Array(repeating: [.green], count: 140)
     )
     static let repoTwo = Repository(name: "Your repo 2",
                                         owner: Owner(avatarUrl: ""),

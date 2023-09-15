@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 struct Repository {
     let name: String
     let owner: Owner
@@ -16,7 +17,7 @@ struct Repository {
     let pushedAt: String
     var avatarData: Data
     var contributors: [Contributor] = []
-//  var commitsByDates: [String:Int] = [:]
+    var colors: [[Color]] = [[.clear]]
     
     var daysSinceLastActivity: Int {
         let formatter = ISO8601DateFormatter()
