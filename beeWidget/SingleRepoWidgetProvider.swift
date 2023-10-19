@@ -140,7 +140,10 @@ struct SingleRepoWidget: Widget {
         .configurationDisplayName("Single Repo Widget")
         .description("This is an example widget.")
         .supportedFamilies([ .systemLarge, .systemMedium, .accessoryCircular, .accessoryInline, .accessoryRectangular])
+        
+    
     }
+    
 }
 
 

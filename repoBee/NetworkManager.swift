@@ -62,9 +62,9 @@ class NetworkManager {
                 for commit in commits {
                     if let dateString = (commit["commit"] as? [String: Any])?["author"] as? [String: Any]? {
                         
-                        //      print(dateString)
+                            // print(dateString)
                         let dateStr = dateString!["date"] as! String// Extract YYYY-MM-DD
-                      //  print(dateStr)
+                        print(dateStr)
                         
                         let formatter = ISO8601DateFormatter()
                         let lastActivityDate = formatter.date(from: dateStr ) ?? .now
@@ -152,7 +152,7 @@ class NetworkManager {
                 }
             }
             
-            print(sortedDictionary2)
+         //   print("sortedDict: ",sortedDictionary2)
             
             
             let values = sortedDictionary2.values.map({ value in

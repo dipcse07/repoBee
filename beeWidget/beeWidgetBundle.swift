@@ -12,6 +12,8 @@ import SwiftUI
 struct beeWidgetBundle: WidgetBundle {
     var body: some Widget {
         SingleRepoWidget()
+        
         DoubleRepoWidget()
     }
+        
 }

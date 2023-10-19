@@ -40,6 +40,9 @@ struct ContributorMediumView: View {
             }
             
         }
+        .containerBackground(for: .widget) {
+            Color.accentColor
+        }
         .padding()
     }
 }
@@ -48,5 +51,10 @@ struct ContributorMediumView_Previews: PreviewProvider {
     static var previews: some View {
         ContributorMediumView(repo: MockData.repoOne)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
+        
     }
 }
+
+//#Preview {
+//    ContributorMediumView(repo: MockData.repoOne)
+//}

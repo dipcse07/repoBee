@@ -76,6 +76,11 @@
 		579D07202A8B0B220038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D071F2A8B0B220038CB20 /* NetworkKit */; };
 		579D07222A8B0B290038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07212A8B0B290038CB20 /* NetworkKit */; };
 		579D07242A8B0B2F0038CB20 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 579D07232A8B0B2F0038CB20 /* NetworkKit */; };
+		57AAC2F62ADFA25900739533 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAC2F52ADFA25900739533 /* ViewExtensions.swift */; };
+		57AAC2F72ADFA25900739533 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAC2F52ADFA25900739533 /* ViewExtensions.swift */; };
+		57AAC2F82ADFA25900739533 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAC2F52ADFA25900739533 /* ViewExtensions.swift */; };
+		57AAC2FA2ADFB9A500739533 /* ContributionChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAC2F92ADFB9A500739533 /* ContributionChart.swift */; };
+		57AAC2FB2ADFB9A500739533 /* ContributionChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAC2F92ADFB9A500739533 /* ContributionChart.swift */; };
 		57AC548D2A8E1B20008D49E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572BA5D42A7CA19800460EA4 /* Assets.xcassets */; };
 		57D1A6132A9DD267008A710B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F54712A935142003C005A /* ArrayExtensions.swift */; };
 		57D1A6142A9DD26B008A710B /* ThemeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F54722A935142003C005A /* ThemeExtensions.swift */; };
@@ -156,6 +161,8 @@
 		579D07172A89D87C0038CB20 /* GitHubContributionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsViewModel.swift; sourceTree = "<group>"; };
 		579D071B2A89D88B0038CB20 /* GitHubContributionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubContributionsProvider.swift; sourceTree = "<group>"; };
 		579D07252A8B100A0038CB20 /* InterfaceKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = InterfaceKit; path = ../../../../InterfaceKit; sourceTree = "<group>"; };
+		57AAC2F52ADFA25900739533 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		57AAC2F92ADFB9A500739533 /* ContributionChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +273,7 @@
 				572BA6372A7CB31700460EA4 /* WidgetBundle.swift */,
 				572BA6232A7CB09A00460EA4 /* beeWidgetBundle.swift */,
 				572BA6252A7CB09A00460EA4 /* beeWidgetProvider.swift */,
+				57AAC2F92ADFB9A500739533 /* ContributionChart.swift */,
 				572F54702A935142003C005A /* Extensions */,
 				572BA6272A7CB09B00460EA4 /* Assets.xcassets */,
 				572BA6292A7CB09B00460EA4 /* Info.plist */,
@@ -290,6 +298,7 @@
 				572F54712A935142003C005A /* ArrayExtensions.swift */,
 				572F54722A935142003C005A /* ThemeExtensions.swift */,
 				572F54732A935142003C005A /* DateExtensions.swift */,
+				57AAC2F52ADFA25900739533 /* ViewExtensions.swift */,
 			);
 			name = Extensions;
 			path = ../../../Extensions;
@@ -464,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				572BA5EB2A7CA3CA00460EA4 /* Repository.swift in Sources */,
+				57AAC2F62ADFA25900739533 /* ViewExtensions.swift in Sources */,
 				57D1A6152A9DD26E008A710B /* DateExtensions.swift in Sources */,
 				572BA6422A7CB31700460EA4 /* MockData.swift in Sources */,
 				572BA6542A7CB73A00460EA4 /* SelectRepoIntent.intentdefinition in Sources */,
@@ -474,6 +484,7 @@
 				572BA5E72A7CA2B800460EA4 /* ContentView.swift in Sources */,
 				57D1A6132A9DD267008A710B /* ArrayExtensions.swift in Sources */,
 				572BA5E92A7CA2B800460EA4 /* NetworkManager.swift in Sources */,
+				57AAC2FA2ADFB9A500739533 /* ContributionChart.swift in Sources */,
 				572BA6402A7CB31700460EA4 /* DoubleRepoWidgetProvider.swift in Sources */,
 				572BA6482A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
 				579D071C2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */,
@@ -503,11 +514,13 @@
 				572F54742A935143003C005A /* ArrayExtensions.swift in Sources */,
 				572BA66D2A7CCBCD00460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA6242A7CB09A00460EA4 /* beeWidgetBundle.swift in Sources */,
+				57AAC2FB2ADFB9A500739533 /* ContributionChart.swift in Sources */,
 				572F54752A935143003C005A /* ThemeExtensions.swift in Sources */,
 				572BA6432A7CB31700460EA4 /* MockData.swift in Sources */,
 				572BA64F2A7CB66200460EA4 /* NetworkManager.swift in Sources */,
 				579D07192A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */,
 				572BA64D2A7CB31700460EA4 /* RepoMediumView.swift in Sources */,
+				57AAC2F72ADFA25900739533 /* ViewExtensions.swift in Sources */,
 				572BA6492A7CB31700460EA4 /* WidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +533,7 @@
 				572BA6852A7CD3F700460EA4 /* UserDefaults+Ext.swift in Sources */,
 				572BA6782A7CCE3800460EA4 /* IntentHandler.swift in Sources */,
 				579D071E2A89D88B0038CB20 /* GitHubContributionsProvider.swift in Sources */,
+				57AAC2F82ADFA25900739533 /* ViewExtensions.swift in Sources */,
 				579D071A2A89D87C0038CB20 /* GitHubContributionsViewModel.swift in Sources */,
 				570831382AA8170B004CBD68 /* DateExtensions.swift in Sources */,
 				579D07162A89D8670038CB20 /* GitHubContributionsGraphWidgetView.swift in Sources */,
@@ -593,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -647,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -676,6 +690,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,6 +723,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -733,6 +749,7 @@
 				INFOPLIST_FILE = beeWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = beeWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -760,6 +777,7 @@
 				INFOPLIST_FILE = beeWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = beeWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -786,6 +804,7 @@
 				INFOPLIST_FILE = beeIntens/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = beeIntens;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -812,6 +831,7 @@
 				INFOPLIST_FILE = beeIntens/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = beeIntens;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C707B38F-B972-40BD-ACC2-0893587A68D5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D67513C9-D6DD-4C27-ADCA-BA934A9642B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beeWidget/GitHubContributionsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "contributionLevels(rowsCount:columnsCount:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D67513C9-D6DD-4C27-ADCA-BA934A9642B1 - 510350ddc9d44ace"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "repoBee.GitHubContributionsViewModel.contributionLevels(rowsCount: Swift.Int, columnsCount: Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/GitHubContributionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "D67513C9-D6DD-4C27-ADCA-BA934A9642B1 - 510350ddc9d44ace"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "repoBee.GitHubContributionsViewModel.contributionLevels(rowsCount: Swift.Int, columnsCount: Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/GitHubContributionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "D67513C9-D6DD-4C27-ADCA-BA934A9642B1 - 510350ddc9d44ace"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "repoBee.GitHubContributionsViewModel.contributionLevels(rowsCount: Swift.Int, columnsCount: Swift.Int) -&gt; Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/GitHubContributionsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAF9E0B6-D8AA-415B-86EF-AB3220DDED8D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beeWidget/SingleRepoWidgetProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "getTimeline(for:in:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAF9E0B6-D8AA-415B-86EF-AB3220DDED8D - 260f655d6fc59159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "DAF9E0B6-D8AA-415B-86EF-AB3220DDED8D - 260f655d6fc59159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "609">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beeWidget/SingleRepoWidgetProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getTimeline(for:in:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 6083c427ffa1459b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "984">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 6083c427ffa1459b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 91cce5a47e83839d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "732">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 91cce5a47e83839d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1108">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 1e160522f9fec19f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 1e160522f9fec19f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1180">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 2ac0857d58d62c33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 260f655d6fc59178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - a7a6326611977e7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 6083c427ffa1459b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1435">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 91cce5a47e83839d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1125">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 1e160522f9fec19f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "748">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 2ac0857d58d62c33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) await resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - 260f655d6fc59178"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "549">
+               </Location>
+               <Location
+                  uuid = "DAF46262-9C51-47D9-9A99-15BFFA24F1C9 - a7a6326611977e7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(14) suspend resume partial function for closure #1 @Sendable () async -&gt; () in repoBee.SingleReopProvider.getTimeline(for: repoBee.SelectSingleRepoIntent, in: WidgetKit.TimelineProviderContext, completion: (WidgetKit.Timeline&lt;repoBee.SingleRepoEntry&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/beeWidget/SingleRepoWidgetProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "213">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3065770A-52EB-4454-86F6-4F18C8E208AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "repoBee/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "getColorsFromCommitsAndDates(atUrl:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3065770A-52EB-4454-86F6-4F18C8E208AC - a6fc57acaa4bf23b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "19916">
+               </Location>
+               <Location
+                  uuid = "3065770A-52EB-4454-86F6-4F18C8E208AC - a6fc57acaa4bf23b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "19981">
+               </Location>
+               <Location
+                  uuid = "3065770A-52EB-4454-86F6-4F18C8E208AC - a6fc57acaa4bf23b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "19839">
+               </Location>
+               <Location
+                  uuid = "3065770A-52EB-4454-86F6-4F18C8E208AC - a6fc57acaa4bf23b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "19835">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B50C5C2-526A-42AD-9501-2EAD64DE8930"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "repoBee/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "getColorsFromCommitsAndDates(atUrl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F45960C7-E2DA-4E15-88E6-1DC3A32B5CE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "repoBee/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "getColorsFromCommitsAndDates(atUrl:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F45960C7-E2DA-4E15-88E6-1DC3A32B5CE2 - a6fc57acaa4bf6fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "15288">
+               </Location>
+               <Location
+                  uuid = "F45960C7-E2DA-4E15-88E6-1DC3A32B5CE2 - a6fc57acaa4bf6fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for repoBee.NetworkManager.getColorsFromCommitsAndDates(atUrl: Swift.String) async throws -&gt; Swift.Array&lt;Swift.Array&lt;SwiftUI.Color&gt;&gt;"
+                  moduleName = "repoBee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/intel/Desktop/work/repoBee/repoBee/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "15507">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
